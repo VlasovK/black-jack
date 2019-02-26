@@ -1,0 +1,165 @@
+html { min-height: 100%; }
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: url(img/background.jpg) no-repeat center top / 100% 100%;
+  min-height: 100%;
+}
+@media (max-width: 1600px) {
+  body {
+    background-size: cover;
+  }
+}
+.clearfix {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+a {
+  position: absolute;
+  display: block;
+  left: 17%;
+  top: 35px;
+  color: #edefbe;
+  text-decoration: none;
+}
+.rules {
+  left: 29%;
+}
+h1 {
+  margin-bottom: 100px;
+  text-align: center;
+  background-color: rgba(20, 20, 20, 0.5);
+  color: white;
+}
+#gameResult {
+  text-align: center;
+  margin-top: 600px;
+  font-size: 100px;
+}
+h3 {
+  margin-left: 30px;
+  margin-top: 90px;
+  font-size:  40px;
+  font-style: italic;
+  font-weight: 200;
+  color: #edefbe;
+}
+.dealerCards {
+  box-sizing: border-box;
+  float: left;
+  width: auto;
+  padding-left: 100px;
+  padding-bottom: 10px;
+}
+.playerCards {
+  box-sizing: border-box;
+  float: left;
+  width: auto;
+  padding-top: 10px;
+  padding-left: 100px;
+}
+
+.card {
+  float: left;
+  width: 141px;
+  height: 211px;
+  background-image: url(img/cards.svg);
+  background-size: 2000px;
+  padding-left: 10px;
+}
+body .card.faceUp {
+  float: left;
+  width: 141px;
+  height: 211px;
+  background-image: url(img/face-up.jpg);
+  background-size: 275px;
+  background-position: -61px -2px;
+  -webkit-border-radius: 12px;
+  padding-left: 10px;
+}
+.buttonsBlock {
+  float: left;
+  width: 141px;
+  height: 211px;
+  padding-left: 20px;
+}
+#playerButtons { display: none; }
+.button {
+  text-transform: uppercase;
+  margin-top: 20px;
+  width: 100px;
+  height: 40px;
+}
+.button:first-child {
+  margin-top: 105px;
+}
+.win {
+  color: #9be391;
+  text-shadow: rgba(255, 255, 179, 0.4) 0 0 40px;
+}
+
+.lose {
+  color: #b32d00;
+  text-shadow: rgba(255, 51, 0, 0.4) 0 0 40px;
+}
+
+.draw {
+  color: #edefbe;
+  text-shadow: rgba(242, 242, 242, 0.4) 0 0 40px;
+}
+
+.card.sA { background-position: -12px -12px }
+.card.s2 { background-position: -165px -12px }
+.card.s3 { background-position: -318px -12px }
+.card.s4 { background-position: -471px -12px }
+.card.s5 { background-position: -624px -12px }
+.card.s6 { background-position: -777px -12px }
+.card.s7 { background-position: -930px -12px }
+.card.s8 { background-position: -1083px -12px }
+.card.s9 { background-position: -1236px -12px }
+.card.s10 { background-position: -1389px -12px }
+.card.sJ { background-position: -1542px -12px }
+.card.sQ { background-position: -1695px -12px }
+.card.sK { background-position: -1848px -12px }
+.card.hA { background-position: -12px -236px }
+.card.h2 { background-position: -165px -236px }
+.card.h3 { background-position: -318px -236px }
+.card.h4 { background-position: -471px -236px }
+.card.h5 { background-position: -624px -236px }
+.card.h6 { background-position: -777px -236px }
+.card.h7 { background-position: -930px -236px }
+.card.h8 { background-position: -1083px -236px }
+.card.h9 { background-position: -1236px -236px }
+.card.h10 { background-position: -1389px -236px }
+.card.hJ { background-position: -1542px -236px }
+.card.hQ { background-position: -1695px -236px }
+.card.hK { background-position: -1848px -236px }
+.card.dA { background-position: -12px -460px }
+.card.d2 { background-position: -165px -460px }
+.card.d3 { background-position: -318px -460px }
+.card.d4 { background-position: -471px -460px }
+.card.d5 { background-position: -624px -460px }
+.card.d6 { background-position: -777px -460px }
+.card.d7 { background-position: -930px -460px }
+.card.d8 { background-position: -1083px -460px }
+.card.d9 { background-position: -1236px -460px }
+.card.d10 { background-position: -1389px -460px }
+.card.dJ { background-position: -1542px -460px }
+.card.dQ { background-position: -1695px -460px }
+.card.dK { background-position: -1848px -460px }
+.card.cA { background-position: -12px -684px }
+.card.c2 { background-position: -165px -684px }
+.card.c3 { background-position: -318px -684px }
+.card.c4 { background-position: -471px -684px }
+.card.c5 { background-position: -624px -684px }
+.card.c6 { background-position: -777px -684px }
+.card.c7 { background-position: -930px -684px }
+.card.c8 { background-position: -1083px -684px }
+.card.c9 { background-position: -1236px -684px }
+.card.c10 { background-position: -1389px -684px }
+.card.cJ { background-position: -1542px -684px }
+.card.cQ { background-position: -1695px -684px }
+.card.cK { background-position: -1848px -684px }
